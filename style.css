@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    margin: 20px 0;
+}
+
+.landing-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#scanner-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.viewport {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    background-color: #000;
+}
+
+.output {
+    margin-top: 10px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

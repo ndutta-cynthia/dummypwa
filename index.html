@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy PWA with Barcode Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/icon-192x192.png" type="image/png">
+
+    <!-- Include QuaggaJS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+
+    <!-- Register the Service Worker -->
+    <script defer src="app.js"></script>
+    <!-- Barcode Scanner JS -->
+    <script defer src="scanner.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Dummy PWA with Barcode Scanner</h1>
+        </header>
+        <main>
+            <!-- Landing Page Content -->
+            <img src="image.jpg" alt="Sample Image" class="landing-image">
+            
+            <!-- Button to start scanning -->
+            <button id="startScanBtn">Start Barcode Scanner</button>
+
+            <!-- Video element to show the camera feed for scanner -->
+            <div id="scanner-container" style="display: none;">
+                <div id="interactive" class="viewport"></div>
+                <div id="scanner-output" class="output">Scanning...</div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Dummy PWA. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
