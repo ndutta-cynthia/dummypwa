@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
 }
 
 .container {
@@ -9,27 +10,36 @@ body {
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
+    box-sizing: border-box;  /* Include padding in element's width */
 }
 
 header {
     background-color: #4CAF50;
     color: white;
     padding: 15px;
+    position: sticky;  /* Keeps the header at the top while scrolling */
+    top: 0;
+    z-index: 10;  /* Ensures header stays above other elements */
 }
 
 header h1 {
     margin: 0;
+    font-size: 1.5rem;  /* Adjusted font size for better responsiveness */
 }
 
 main {
     margin: 20px 0;
 }
 
+.content {
+    margin-bottom: 20px;  /* Add spacing for bottom */
+}
+
 .landing-image {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%;  /* Ensure image does not overflow */
+    height: auto;     /* Maintain aspect ratio */
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  /* Add some space below the image */
 }
 
 #scanner-container {
@@ -38,13 +48,15 @@ main {
     max-width: 600px;
     margin: 20px auto;
     text-align: center;
+    overflow: hidden;  /* Prevent unwanted overflow */
 }
 
 .viewport {
     width: 100%;
-    height: 400px;
+    height: 400px;  /* Set a fixed height */
     border-radius: 8px;
     background-color: #000;
+    margin-bottom: 20px;  /* Add space below */
 }
 
 .output {
@@ -57,9 +69,9 @@ footer {
     background-color: #333;
     color: white;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    text-align: center;
+    position: relative;  /* Allow footer to flow with content */
 }
 
 footer p {
