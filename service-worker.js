@@ -3,9 +3,9 @@ const urlsToCache = [
     "/",
     "/index.html",
     "/styles.css",
-    "/image.jpg",
+    "/image.jpg",  // Ensure this image path is correct
     "/manifest.json",
-    "/scanner.js"  // Add scanner.js to the cache list
+    "/scanner.js"
 ];
 
 // Install the service worker
